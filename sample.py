@@ -26,5 +26,5 @@ s = Bankaccount()
    
 # Calling functions with that class object 
 s.deposit() 
-s.withdraw() 
+#s.withdraw() 
 s.display() 
