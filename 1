@@ -1,0 +1,13 @@
+class BankAccount(object):
+    def _init_(self, initial_bal=0):
+        self.bal = self.initial_bal
+    def deposit(self,amount):
+        self.bal += self.amount
+    def withdrawn(self,amount):
+        self.bal -= self.amount
+    def overdrawn(self):
+        return self.bal < 0
+
+acc = BankAccount(15)
+acc.deposit(200)
+print(acc.bal)
