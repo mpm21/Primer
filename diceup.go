@@ -7,13 +7,11 @@ import (
 func main(){
 	m := 1
 	for m > 0 {
-		var a,b int
-        // var input string
+		var a,b int //input string
 		if _,err := fmt.Scan(&a, &b); err != nil {
 			log.Print("  Scan for i, j & k failed, due to ", err)
 		}
 		innerlen := a+b+1
-		// var outcomes [a+b+1]int
 		outcomes := make([]int, innerlen)
 		for i := 0 ; i < innerlen ; i++{
 			outcomes[i] = 0
