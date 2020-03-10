@@ -1,5 +1,5 @@
 //Dicegame
-//https://github.com/csundlof/Kattis/blob/master/dicecup/dicecup.cpp -> ref
+//https://github.com/csundlof/Kattis/-> ref
 package main
 import (
 	"fmt"
