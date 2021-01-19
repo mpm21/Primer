@@ -16,7 +16,7 @@ Run -> protoc --go_out=plugins=grpc:. protos/helloworld.proto
 
 Run server
 go run server/main.go
-https://github.com/grpc/grpc/blob/d910557f22ab445a3618a358d7a6bb17836c7151/BUILDING.md
+https://github.com/grpc/grpc/blob/d910557f22ab445a3618a358d7a6bb17836c7151/BUILDING.md												
 
 Create grpc_cli for Client
 
