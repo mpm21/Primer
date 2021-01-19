@@ -1,4 +1,5 @@
 #docker run --rm -v $(pwd):/app -w /app <image_name>:<tag> golangci-lint run -c strict_config.yaml --timeout 2m0s
+#This dockerfile is for integrating golangCI-linter in pipeline
 FROM golang:1.13.1 as builder
 RUN apt-get update && apt-get install -y \
     wget \
