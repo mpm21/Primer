@@ -6,23 +6,31 @@ docker build -t <image_name>:<tag> .
 	
 docker run --rm -v $(pwd):/app -w /app <image_name>:<tag>
 	
-**gRPC Installation**
+***gRPC Installation***
 
 Install packages
 
+Create go-service folder
+
 Run -> dep ensure
 
-To create protobuf
+***To create protobuf***
 
-create a file names <filename>.protobuf
+create a <filename>.protobuf
 	
 Run -> protoc --go_out=plugins=grpc:. protos/helloworld.proto
 
+***BUILDING gRPC***
+
+https://github.com/grpc/grpc/blob/d910557f22ab445a3618a358d7a6bb17836c7151/BUILDING.md	
+
+***SERVER***
+
 Run server
 
-go run server/main.go
+go run server/main.go											
 
-https://github.com/grpc/grpc/blob/d910557f22ab445a3618a358d7a6bb17836c7151/BUILDING.md												
+***CLIENT***
 
 Create grpc_cli for Client
 
